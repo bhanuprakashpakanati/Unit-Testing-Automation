@@ -42,7 +42,7 @@ class TestDataProcessingTool(unittest.TestCase):
         self.assertIn('mode', stats)
 
     def test_plot_data(self):
-        # This test would not normally be automated as it generates plots.
+        ## This test would not normally be automated as it generates plots.
         # Here, we can just check if it runs without error.
         try:
             plot_data(self.df[['A', 'B', 'C']].dropna(), 'histogram')
