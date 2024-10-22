@@ -41,7 +41,7 @@ def plot_data(df: pd.DataFrame, plot_type: str) -> None:
         raise ValueError("Unknown plot type")
     plt.show()
 
-# Example usage
+## Example usage
 if __name__ == "__main__":
     df = read_csv('data.csv')
     df = clean_data(df)
